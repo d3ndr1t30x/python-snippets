@@ -1,0 +1,221 @@
+{
+    // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. 
+    // Possible variables are: $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} 
+    // for placeholders. Placeholders with the same ids are connected.
+
+    // Example:
+    // "Print to console": {
+    //  "prefix": "log",
+    //  "body": [
+    //      "console.log('$1');",
+    //      "$2"
+    //  ],
+    //  "description": "Log output to console"
+    // }
+    
+    "Print Statement": {
+        "prefix": "eprint",
+        "body": [
+            "print(\"$1\")"
+        ],
+        "description": "Prints a message to the console"
+    },
+
+    "For Loop": {
+        "prefix": "efor",
+        "body": [
+            "for i in range(changethis(changethis)):",
+            "    $0"
+        ],
+        "description": "Creates a for loop"
+    },
+
+    "While Loop": {
+        "prefix": "whileloo",
+        "body": [
+            "while ${1:condition}:",
+            "    $0"
+        ],
+        "description": "Creates a while loop"
+    },
+
+    "If Statement": {
+        "prefix": "if",
+        "body": [
+            "if ${1:condition}:",
+            "    $0"
+        ],
+        "description": "Creates an if statement"
+    },
+
+    "Else Statement": {
+        "prefix": "else",
+        "body": [
+            "else:",
+            "    $0"
+        ],
+        "description": "Creates an else block"
+    },
+
+    "Elif Statement": {
+        "prefix": "elif",
+        "body": [
+            "elif ${1:condition}:",
+            "    $0"
+        ],
+        "description": "Creates an elif block"
+    },
+
+    "Function Definition": {
+        "prefix": "def",
+        "body": [
+            "def ${1:function_name}(${2:params}):",
+            "    \"\"\"${3:Docstring}\"\"\"",
+            "    $0"
+        ],
+        "description": "Defines a function"
+    },
+
+    "Class Definition": {
+        "prefix": "class",
+        "body": [
+            "class ${1:ClassName}(${2:object}):",
+            "    def __init__(self, ${3:args}):",
+            "        $0"
+        ],
+        "description": "Creates a class"
+    },
+
+    "List Comprehension": {
+        "prefix": "listcomp",
+        "body": [
+            "[${1:expression} for ${2:item} in ${3:iterable}]"
+        ],
+        "description": "Creates a list comprehension"
+    },
+
+    "Try Except Block": {
+        "prefix": "try",
+        "body": [
+            "try:",
+            "    $1",
+            "except ${2:Exception} as ${3:e}:",
+            "    $0"
+        ],
+        "description": "Creates a try-except block"
+    },
+
+    "Import Module": {
+        "prefix": "import",
+        "body": [
+            "import ${1:module}"
+        ],
+        "description": "Imports a module"
+    },
+
+    "From Import Statement": {
+        "prefix": "fromimport",
+        "body": [
+            "from ${1:module} import ${2:function}"
+        ],
+        "description": "Imports a specific function or class from a module"
+    },
+
+    "Empty List": {
+        "prefix": "elist",
+        "body": [
+            "['', '', '', '']"
+        ],
+        "description": "Creates an empty list"
+    },
+
+    "Empty Function": {
+        "prefix": "efunc",
+        "body": [
+            "def changeThis(,,,):"
+        ],
+        "description": "Creates an empty function"
+    },
+    
+    "Empty Dictionary": {
+        "prefix": "edict",
+        "body": [
+            "${1:change_this} = {",
+            "    '${2:key1}': '${3:value1}',",
+            "    '${4:key2}': '${5:value2}',",
+            "    '${6:key3}': '${7:value3}',",
+            "    '${8:key4}': '${9:value4}'",
+            "}"
+        ],
+        "description": "Creates an empty dictionary"
+    },
+
+    "List Initialization": {
+        "prefix": "list",
+        "body": [
+            "${1:list_name} = [${2:items}]"
+        ],
+        "description": "Initializes a list with items"
+    },
+
+    "Dictionary Initialization": {
+        "prefix": "dict",
+        "body": [
+            "${1:dict_name} = {${2:key}: ${3:value}}"
+        ],
+        "description": "Initializes a dictionary"
+    },
+
+    "Main Function": {
+        "prefix": "main",
+        "body": [
+            "if __name__ == '__main__':",
+            "    ${1:main()}",
+            "    $0"
+        ],
+        "description": "Creates a main function block"
+    },
+
+    "Range Function": {
+        "prefix": "range",
+        "body": [
+            "range(${1:stop})"
+        ],
+        "description": "Creates a range function"
+    },
+
+    "Docstring": {
+        "prefix": "doc",
+        "body": [
+            "\"\"\"${1:Description}\"\"\""
+        ],
+        "description": "Adds a docstring"
+    },
+
+    "Empty F-string": {
+    "prefix": "efs",
+    "body": [
+        "print(f\"{} - {}\")"
+    ],
+
+    "description": "Prints an empty f-string"},
+    "Empty Class": {
+    "prefix": "eclass",
+    "body": [
+        "class ${1:ClassName}:",
+        "    \"\"\"${2:Docstring for $1}\"\"\"",
+        "    def __init__(self):",
+        "        \"\"\"Initialize $1 instance.\"\"\"",
+        "        pass",
+        "",
+        "    def ${3:method_one}(self):",
+        "        \"\"\"${4:Description of method_one}\"\"\"",
+        "        pass",
+        "",
+        "    def ${5:method_two}(self):",
+        "        \"\"\"${6:Description of method_two}\"\"\"",
+        "        pass"
+    ],
+    "description": "Create an empty Python class with default methods"}
+}
